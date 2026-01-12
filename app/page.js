@@ -168,7 +168,7 @@ export default function Home() {
     seteditingvalue("");
 
     try {
-      const res = await fetch("http://localhost:3000/api/todo", {
+      const res = await fetch("/api/todo", {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
